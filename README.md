@@ -6,9 +6,15 @@ Here is used ESP-01 for WiFi requests to the server. Basically idea is to create
 
 # How to make this sh**t work
 
+<div>
+  <img src="https://user-images.githubusercontent.com/48696470/139743871-36d4f821-8e6a-4bcd-8e18-a4a71903e9e6.png" alt="My connection" height="200px"/>
+  <img src="https://user-images.githubusercontent.com/48696470/139743683-5fbc1c17-9092-4dfb-9eaa-3837965f1c32.png" alt="Connection example" height="200px"/>
+</div>
+
 1. Make all required connections for your ESP-01(I use ESP-01 Breakout board, Arduino without microcontroller and logic level step down converter).
-  ![image](https://user-images.githubusercontent.com/48696470/139743683-5fbc1c17-9092-4dfb-9eaa-3837965f1c32.png)
-  ![image](https://user-images.githubusercontent.com/48696470/139743871-36d4f821-8e6a-4bcd-8e18-a4a71903e9e6.png)
+<!-- Images are replaced with HTML because they were too big, if there are any issues you can set it as before -->
+<!--   ![image](https://user-images.githubusercontent.com/48696470/139743683-5fbc1c17-9092-4dfb-9eaa-3837965f1c32.png) -->
+<!--   ![image](https://user-images.githubusercontent.com/48696470/139743871-36d4f821-8e6a-4bcd-8e18-a4a71903e9e6.png) -->
 2. Open serial monitor
 3. Select 115200 baud rate
 4. Select “Both NL & CL”(new and carriage line in serial monitor setting)
@@ -30,3 +36,4 @@ Here is used ESP-01 for WiFi requests to the server. Basically idea is to create
 # Sources
 - [Commands list](https://wiki.iteadstudio.com/images/5/53/Esp8266_at_instruction_set_en_v1.5.4_0.pdf)
 - [Good tutorial](https://www.geekstips.com/esp8266-arduino-tutorial-iot-code-example/)
+- [Types of ESP](https://blog.squix.org/2015/03/esp8266-module-comparison-esp-01-esp-05.html)(ESP-01, ESP-05, ESP-12...)
