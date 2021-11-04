@@ -37,6 +37,7 @@ Here is used ESP-01 for WiFi requests to the server. Basically idea is to create
 1. If you can’t send or receive messages: Check connection, use step down logic converters if needed, use correct version of Arduino IDE(2.0.X Beta is UNSTABLE!!!)
 2. 2.	If you receive error when send `AT+CWLAP` then try this `AT+CWMODE=3`. [Link](https://medium.com/@deduardopineda/the-correc-command-is-at-cwlap-wifi-name-wifi-password-d642b301c6ec).
 3. If you can not connect to the  network via `AT+CWJAP=”SSID”,”PASSWORD”` it can be because you have wrong quoutation(“)mark craracter code, use plain standard ASKI quotation mark. Ithink something like that `AT+CWJAP="SSID","PASSWORD"`.
+4. If you cannot burn your program into ESP-01 then turn power off and inser GPIO0 to GND. THen connect and try again. TRUN OFF AND ON AFTER AND BEFORE EACH UPLOAD!!!
 
 # Sources
 - [How to program this ESP using Arduino UNO with ATMEGA ejected](https://www.instructables.com/Programming-ESP-01-With-Arduino/)
