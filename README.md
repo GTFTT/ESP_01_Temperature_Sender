@@ -45,4 +45,5 @@ Here is used ESP-01 for WiFi requests to the server. Basically idea is to create
 - [Good tutorial](https://www.geekstips.com/esp8266-arduino-tutorial-iot-code-example/)
 - [Types of ESP](https://blog.squix.org/2015/03/esp8266-module-comparison-esp-01-esp-05.html)(ESP-01, ESP-05, ESP-12...)
 - [Image of alternative soldering way from here](https://www.allaboutcircuits.com/projects/breadboard-and-program-an-esp-01-circuit-with-the-arduino-ide/)
+- [Send requests](https://randomnerdtutorials.com/esp8266-nodemcu-http-get-post-arduino/)
 
