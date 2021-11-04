@@ -13,6 +13,9 @@ Here is used ESP-01 for WiFi requests to the server. Basically idea is to create
   <img src="https://user-images.githubusercontent.com/48696470/140382628-33df5bd0-46d6-4a91-b54c-ef300504083e.png" alt="Soldering example" title="Alternative soldering example" height="200px"/>
 </div>
 
+![image](https://user-images.githubusercontent.com/48696470/140387173-5c872534-c33e-48f5-8be9-c175ec7afcc8.png)
+
+
 1. Make all required connections for your ESP-01(I use ESP-01 Breakout board, Arduino without microcontroller and logic level step down converter).
 <!-- Images are replaced with HTML because they were too big, if there are any issues you can set it as before -->
 <!--   ![image](https://user-images.githubusercontent.com/48696470/139743683-5fbc1c17-9092-4dfb-9eaa-3837965f1c32.png) -->
