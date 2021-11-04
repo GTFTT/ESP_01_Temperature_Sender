@@ -39,7 +39,9 @@ Here is used ESP-01 for WiFi requests to the server. Basically idea is to create
 3. If you can not connect to the  network via `AT+CWJAP=”SSID”,”PASSWORD”` it can be because you have wrong quoutation(“)mark craracter code, use plain standard ASKI quotation mark. Ithink something like that `AT+CWJAP="SSID","PASSWORD"`.
 
 # Sources
+- [How to program this ESP using Arduino UNO with ATMEGA ejected](https://www.instructables.com/Programming-ESP-01-With-Arduino/)
 - [Commands list](https://wiki.iteadstudio.com/images/5/53/Esp8266_at_instruction_set_en_v1.5.4_0.pdf)
 - [Good tutorial](https://www.geekstips.com/esp8266-arduino-tutorial-iot-code-example/)
 - [Types of ESP](https://blog.squix.org/2015/03/esp8266-module-comparison-esp-01-esp-05.html)(ESP-01, ESP-05, ESP-12...)
 - [Image of alternative soldering way from here](https://www.allaboutcircuits.com/projects/breadboard-and-program-an-esp-01-circuit-with-the-arduino-ide/)
+
