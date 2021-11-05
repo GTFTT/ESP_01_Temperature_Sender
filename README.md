@@ -41,6 +41,7 @@ Here is used ESP-01 for WiFi requests to the server. Basically idea is to create
 
 # Sources
 - [How to program this ESP using Arduino UNO with ATMEGA ejected](https://www.instructables.com/Programming-ESP-01-With-Arduino/)
+- [My video reminder](https://youtu.be/keTwss8LwOI)
 - [Commands list](https://wiki.iteadstudio.com/images/5/53/Esp8266_at_instruction_set_en_v1.5.4_0.pdf)
 - [Good tutorial](https://www.geekstips.com/esp8266-arduino-tutorial-iot-code-example/)
 - [Types of ESP](https://blog.squix.org/2015/03/esp8266-module-comparison-esp-01-esp-05.html)(ESP-01, ESP-05, ESP-12...)
