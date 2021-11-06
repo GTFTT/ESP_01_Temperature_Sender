@@ -10,7 +10,7 @@
 
 const char* ssid = "Nataliya";
 const char* password = "08061961";
-String      requestPath = "http://a2b7-92-112-198-38.ngrok.io/updateDeviceData/44rDuq17";
+String      requestPath = "http://rtc-api-server.herokuapp.com/updateDeviceData/44rDuq17";
 
 Chrono      senderChrono;
 DHT         dht(DHT11_PIN, DHT11);
