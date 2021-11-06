@@ -3,21 +3,23 @@
 #include <WiFiClient.h>
 #include <ArduinoJson.h>
 #include <Chrono.h>
+#include <DHT.h>
 
 #define sendInterval 1000
+#define DHT11_PIN 2
 
 const char* ssid = "Nataliya";
 const char* password = "08061961";
+String      requestPath = "http://a2b7-92-112-198-38.ngrok.io/updateDeviceData/44rDuq17";
 
 Chrono      senderChrono;
+DHT         dht(DHT11_PIN, DHT11);
 
-String requestPath = "http://a2b7-92-112-198-38.ngrok.io/updateDeviceData/44rDuq17";
 
 void setup() {
   Serial.begin(115200);
   connectToWiFi();
-  pinMode(2, OUTPUT);
-  digitalWrite(2, HIGH); //Indicate that all is ready
+  dht.begin();
 }
 
 void loop() {
@@ -49,11 +51,21 @@ void loop() {
 }
 
 //Generate json ready to be sent
+//Notice that huminity has to be mesured once per second maximum for DHT11
 String getDataMessage() {
   DynamicJsonDocument doc(512);
-  doc["temperature"] = 10.00;
-  doc["humidity"] = 10.00;
+  float temperature = dht.readTemperature();
+  float humidity = dht.readHumidity();
   
+  if (isnan(temperature) || isnan(humidity)) {
+    Serial.println("Failed to read from DHT sensor!");
+  } else {
+    Serial.println((String)"Temperature = " + temperature);
+    Serial.println((String)"Humidity = " + humidity);
+    doc["data"]["temperature"] = temperature;
+    doc["data"]["humidity"] = humidity;
+  }
+
   String message;
   serializeJson(doc, message);
 
